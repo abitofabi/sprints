@@ -1,5 +1,3 @@
-# sprints
-Daily / weekly learning logs
 # 🧠 abitofabi/sprints
 
 Welcome! I'm Abinaya — a data engineer rebooting her cloud & AI journey through **structured learning sprints**.
