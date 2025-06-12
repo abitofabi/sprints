@@ -1,0 +1,44 @@
+# AWS DEA - Day 5 Notes: VPC & Networking Basics 🌐🚦
+
+## 1. VPC (Virtual Private Cloud)
+- Isolated virtual network in AWS where you launch AWS resources.
+- Define IP range using CIDR blocks (e.g., 10.0.0.0/16).
+- Allows control over network configuration.
+
+## 2. Subnets
+- Subdivide VPC CIDR block into smaller IP ranges.
+- Types:
+  - Public Subnet: Has route to Internet Gateway (IGW).
+  - Private Subnet: No direct internet access, usually uses NAT Gateway for outbound internet.
+  
+## 3. Internet Gateway (IGW)
+- Allows communication between instances in VPC and the internet.
+- Attached to VPC.
+
+## 4. NAT Gateway
+- Enables instances in private subnets to access the internet (for updates, downloads) without exposing them publicly.
+
+## 5. Route Tables
+- Controls routing of traffic within the VPC and to external networks.
+- Routes define where traffic destined to IP ranges should go (e.g., IGW, NAT, peering).
+
+## 6. Security Groups
+- Virtual firewall at instance level.
+- Stateful: responses to allowed inbound traffic are automatically allowed outbound.
+- Rules define allowed inbound and outbound traffic by protocol, port, and source/destination.
+
+## 7. Network ACLs (NACLs)
+- Optional subnet-level firewall.
+- Stateless: each request and response must be allowed explicitly.
+- Controls inbound and outbound traffic for subnets.
+
+## 8. VPC Endpoints (Briefly)
+- Enable private connections between VPC and supported AWS services (like S3, DynamoDB) without using public IPs.
+
+---
+
+## No Code Practice for Today  
+- Focused on conceptual understanding and hands-on setup in AWS Console/CLI.
+- Recommended: Create a sample VPC, subnets, IGW, NAT, security groups, and test EC2 instance connectivity.
+
+
