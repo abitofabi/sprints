@@ -21,17 +21,9 @@ To **learn like school**, with:
 
 | Sprint Topic | Description | Status |
 |--------------|-------------|--------|
-| [aws-dea](./aws-dea) | AWS Foundations + DEA-C01 Certification | 🚧 In Progress |
-| snowflake | Coming soon... | ⏳ Not started |
+| [aws-dea](./aws-dea) | AWS Foundations + DEA-C01 Certification | 🚧 In Progress (Target Jul 2025)|
+| [snowflake](./snowflake-snowpro-core)  | Snowflake Snowpro Core certification | 🚧 In Progress (Target Jul 2025)|
 
----
-
-## 📁 Folder Structure within
-topic/
-├── week1/ ← AWS foundations (S3, EC2, IAM, VPC)
-├── week2/ ← Data Engineering essentials (Glue, Kinesis, Athena)
-├── week3/ ← Databases + DEA final prep (RDS, Redshift)
-└── README.md 
 ---
 
 ## 🧪 What's Inside Each Week?
