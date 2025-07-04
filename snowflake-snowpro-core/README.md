@@ -1,4 +1,6 @@
-s# ❄️ Snowflake SnowPro Core Sprint
+## ❄️ Snowflake SnowPro Core Sprint
+
+***Certified on the first try with 845 — after a 7-day sprint. Proof that consistency beats overwhelm. 💪***
 
 Welcome to my **SnowPro Core Certification Sprint** – a focused and hands-on learning journey to master Snowflake fundamentals and earn the **SnowPro Core Certification**. This repository contains my organized notes, queries, practice tests, and small projects as I prepare for the exam.
 
