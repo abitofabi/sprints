@@ -16,8 +16,6 @@ Welcome to my **SnowPro Core Certification Sprint** – a focused and hands-on l
 
 ---
 
----
-
 ## 📅 Sprint Timeline
 
 | Day | Topics |
@@ -25,9 +23,9 @@ Welcome to my **SnowPro Core Certification Sprint** – a focused and hands-on l
 | ✅ **Day 1** | Architecture, Virtual Warehouses, Databases & Tables |
 | ✅ **Day 2** | Data Loading/Unloading, File Formats, Snowflake Marketplace |
 | ✅ **Day 3** | Access Control (RBAC), Resource Monitors, JSON Data |
-| 🔄 **Day 4–6** | Streams, Tasks, Time Travel, Data Sharing, Performance |
-| 🧪 **Day 7–8** | Mock Tests + Flashcards + Final Review |
-| 💥 **Exam Day** | 🎉 *Scheduled for June 29 or 30* 🎉 |
+| ✅ **Day 4–6** | Streams, Tasks, Time Travel, Data Sharing, Performance |
+| ✅ **Day 7–8** | Mock Tests + Flashcards + Final Review |
+| ✅ **Exam Day** | 🎉 *Scheduled for July 3* 🎉 |
 
 ---
 
@@ -42,11 +40,11 @@ Welcome to my **SnowPro Core Certification Sprint** – a focused and hands-on l
 | Snowflake Marketplace | ✅ Done |
 | Access Control (RBAC) | ✅ Done |
 | Resource Monitors | ✅ Done |
-| Semi-Structured Data (JSON) | 🟡 In Progress |
-| Streams & Tasks | ⬜ Upcoming |
-| Time Travel & Cloning | ⬜ Upcoming |
-| Data Sharing | ⬜ Upcoming |
-| Mock Exams & Final Review | ⬜ Upcoming |
+| Semi-Structured Data (JSON) | ✅ Done |
+| Streams & Tasks | ✅ Done |
+| Time Travel & Cloning | ✅ Done |
+| Data Sharing | ✅ Done |
+| Mock Exams & Final Review | ✅ Done |
 
 ---
 
@@ -56,12 +54,8 @@ Welcome to my **SnowPro Core Certification Sprint** – a focused and hands-on l
 - Snowflake Masterclass – Udemy (Nikolai Schuler)
 - [Snowflake Docs](https://docs.snowflake.com/)
 - Skillcert pro exam questions for practice
+- Snowflake Exam Practice Questions from Udemy (Nikolai Schuler and Hamid Qureshi)
 - My own Tamil Movie Dataset mini project 🎬
-
----
-
-## 🧠 Flashcard & Review Section
-Check out [`flashcards/`](./flashcards/) for last-minute concepts and common traps.
 
 ---
 
