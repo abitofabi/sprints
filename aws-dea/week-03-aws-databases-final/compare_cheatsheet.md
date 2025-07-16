@@ -38,3 +38,13 @@
 > - Combine **Glue + S3 + Athena** for a lightweight serverless pipeline.
 
 ---
+
+## 🧠 Rule of Thumb:
+
+Glue → Best for serverless batch ETL (medium scale).
+
+EMR → Best for massive batch jobs, custom Spark/Hadoop.
+
+Kinesis + Lambda → Best for real-time pipelines.
+
+Redshift → Best for fast querying/reporting (not real-time compute).
