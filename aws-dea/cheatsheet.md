@@ -49,3 +49,88 @@
 - **Glue** → Serverless ETL; complex transformations.
 - **Lambda** → Lightweight serverless compute.
 - **Fargate** → Long-running or containerized jobs.
+
+# 🧠 AWS DEA-C01 Decision Tree Cheat Sheet
+
+---
+
+## 🚀 Data Ingestion
+
+| Scenario                            | Use                                         |
+|-------------------------------------|---------------------------------------------|
+| Real-time data from apps/devices    | Amazon Kinesis Data Streams                 |
+| Want auto-batching to S3            | Kinesis Data Firehose                       |
+| Need Kafka-compatible stream        | Amazon MSK                                  |
+| IoT devices                         | AWS IoT Core → Kinesis/Firehose             |
+| Uploading files to S3 from edge     | AWS Snowball or AWS DataSync                |
+| One-time large DB or file transfer  | AWS DMS or Snowball                         |
+
+---
+
+## 🔄 Real-time Data Movement
+
+| Source               | Destination | Use                                                              |
+|----------------------|-------------|------------------------------------------------------------------|
+| Kinesis Stream       | Redshift    | Redshift Streaming Ingestion (NEW, low latency)                  |
+| Kinesis              | S3 → Redshift | Firehose to S3, then COPY to Redshift (Batch)                  |
+| Kinesis              | Lambda      | Real-time processing, transformation                             |
+| MSK                  | Redshift    | Use Kafka Connect + Redshift Sink Connector                      |
+
+---
+
+## 🧪 Analytics and Query
+
+| Need                               | Use                                                 |
+|------------------------------------|------------------------------------------------------|
+| Query data in S3 (no load)         | Amazon Athena                                        |
+| Scheduled ETL/ELT in S3            | AWS Glue Jobs + Glue Crawlers                       |
+| Streaming ETL                      | Kinesis Data Analytics                              |
+| Stream-to-dashboard (BI)           | Kinesis → Lambda → DynamoDB → QuickSight           |
+| Query semi-structured data         | Athena or Redshift Spectrum                         |
+
+---
+
+## 🗄️ Storage Tiering Decisions (S3)
+
+| Scenario                            | Storage Class                 |
+|-------------------------------------|-------------------------------|
+| Frequent access                     | S3 Standard                   |
+| Infrequent, but might be accessed   | S3 Intelligent Tiering ✅     |
+| Rarely accessed, cost-saving        | S3 Standard-IA                |
+| Archived, restore within hours      | S3 Glacier                    |
+| Archived, restore in days           | S3 Glacier Deep Archive       |
+| Temporary, auto delete              | S3 Lifecycle + TTL            |
+
+---
+
+## 🔒 Security & Governance
+
+| Requirement               | AWS Feature                            |
+|---------------------------|-----------------------------------------|
+| Data encryption at rest   | SSE-S3 / SSE-KMS                        |
+| Column-level access       | Lake Formation or Redshift RBAC        |
+| Auditing access           | AWS CloudTrail                         |
+| VPC-only access           | VPC Endpoints + S3 Bucket Policy       |
+
+---
+
+## 📡 Data Transfer & Migration
+
+| Need                               | Use                                                  |
+|------------------------------------|-------------------------------------------------------|
+| On-prem DB → AWS                   | AWS DMS                                              |
+| Terabytes of files → S3            | AWS Snowball                                         |
+| Hybrid (on-prem + cloud sync)      | AWS DataSync                                         |
+| Serverless data lake               | S3 + Glue + Athena                                   |
+| SQL warehouse                      | Redshift                                             |
+| Fully managed lakehouse            | Amazon Redshift + Spectrum or EMR with Iceberg      |
+
+---
+
+## 🧰 Tip Patterns
+
+- If **S3 is involved + streaming** → **Firehose**
+- If **Redshift is direct target + stream** → **Redshift Streaming**
+- If **data isn’t accessed often, but unsure** → **Intelligent Tiering**
+- If **semi-structured data in S3 needs SQL** → **Athena**
+- If **ingestion needs transformation** → **Lambda / Glue / Kinesis Data Analytics**
