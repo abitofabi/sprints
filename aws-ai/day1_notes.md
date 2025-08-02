@@ -1,4 +1,13 @@
 # AWS Certified AI Practitioner – Day 1
+
+
+Artificial Intelligence (AI)
+    └── Machine Learning (ML)
+         └── Deep Learning (DL)
+              └── Foundation Models (FM)
+                   └── Large Language Models (LLMs)
+
+
 ## 🧠 Topic: Prompt Engineering
 
 ---
