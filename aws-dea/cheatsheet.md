@@ -134,3 +134,25 @@
 - If **data isn’t accessed often, but unsure** → **Intelligent Tiering**
 - If **semi-structured data in S3 needs SQL** → **Athena**
 - If **ingestion needs transformation** → **Lambda / Glue / Kinesis Data Analytics**
+
+🧠 TL;DR Cheat Sheet for multiple databases
+
+Need	Best Option
+
+One-time or CDC migration	✅ DMS
+Ad-hoc SQL query across sources	✅ Athena Federated Query
+Spark join/transform across DBs	✅ Glue + JDBC
+BI/Reports from multiple sources	✅ QuickSight
+Real-time DB query from Redshift	✅ Redshift Federated
+No-code syncing of data	✅ AppFlow or EventBridge
+
+
+AWS VPC Concepts	Real-World Analogy	Purpose
+
+VPC	🏢 Apartment complex boundary	Your isolated network
+Subnet	🛏️ Individual apartment blocks	Divide areas for public/private use
+Internet Gateway (IGW)	🌐 Main gate that lets you access the internet	Outbound internet for public subnets
+NAT Gateway	🕵️ Secret exit door with one-way mirror	Lets private subnets go out to internet (but not get in)
+Security Group	🚪 Door lock (per room)	Controls who can enter/exit a resource
+NACL	👮 Society-level rules at the main gate	Rules for the whole subnet (stateless)
+Endpoint (Gateway)	🛒 Amazon delivery pickup point inside complex	Lets private subnets talk to AWS services without internet
