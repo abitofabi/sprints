@@ -156,3 +156,4 @@ NAT Gateway	🕵️ Secret exit door with one-way mirror	Lets private subnets go
 Security Group	🚪 Door lock (per room)	Controls who can enter/exit a resource
 NACL	👮 Society-level rules at the main gate	Rules for the whole subnet (stateless)
 Endpoint (Gateway)	🛒 Amazon delivery pickup point inside complex	Lets private subnets talk to AWS services without internet
+Route table Society Map / GPS	Where traffic goes from the subnet
