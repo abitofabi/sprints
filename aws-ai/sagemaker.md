@@ -48,6 +48,17 @@ Amazon SageMaker is a **fully managed service** that allows data scientists and 
 - **MLOps-friendly**: Can integrate with CI/CD and pipelines
 
 ---
+## 🚀 Model Deployment / Inference Types
+
+| Inference Type        | Use Case                                | Features                                       |
+|------------------------|------------------------------------------|------------------------------------------------|
+| **Real-Time Inference**  | Instant predictions (low latency)        | Deploy via **endpoint**, persistent compute     |
+| **Batch Transform**      | Large batch jobs, not latency-sensitive | No endpoint needed, pulls from **S3**           |
+| **Asynchronous Inference** | For large payloads or longer processing time | Uses **inference queues**, responses stored in S3 |
+
+> ✅ **Choose Real-time for chatbot use cases**, **Batch for reports or bulk processing**, and **Async for long tasks (like document/image processing)**.
+
+---
 
 ## 📝 Foundation-Level Exam Tips
 
