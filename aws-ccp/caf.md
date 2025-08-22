@@ -26,7 +26,35 @@ It breaks down cloud adoption into **six key areas** (called *perspectives*) acr
 | **5. Security**      | Protection, risk, compliance            | IAM, KMS, threat detection             |
 | **6. Operations**    | Cloud operations & monitoring           | Incident mgmt, automation, DevOps      |
 
+------
+
+## 🔄 Phases of the Cloud Adoption Journey
+
+AWS CAF typically follows a phased approach. You may see terms like **Envision**, **Align**, **Launch**, and **Scale** — these aren’t strict AWS terminology but often used in cloud journeys inspired by CAF.
+
+### 📌 Phase 1: Envision
+- **Define the vision** for cloud adoption.
+- Identify business outcomes, challenges, and leadership alignment.
+- Answer the question: *Why cloud?*
+
+### 📌 Phase 2: Align
+- **Align stakeholders**, teams, and capabilities to support the vision.
+- Build foundational skills, assign responsibilities.
+- Assess readiness and build a transformation plan.
+
+### 📌 Phase 3: Launch
+- Begin **migrating or building workloads** in the cloud.
+- Set up governance, security, and operational baselines.
+- Implement in **pilot or MVP phases**.
+
+### 📌 Phase 4: Scale
+- Scale adoption across the organization.
+- Optimize for performance, cost, and agility.
+- Drive continuous improvement and innovation.
+
 ---
+
+
 
 ## 💡 CCP Exam Angle
 
